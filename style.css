@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Loved+by+the+King&display=swap');
+
+@font-face {
+    font-family: Sunny;
+    src: url("./assets/Sunny\ Sunday.ttf");
+  }
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./assets/kikis.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background: radial-gradient(circle, rgba(62, 37, 94,1) 30%, rgba(0,0,0,1) 100%);  */
+    color: white;
+    font-family: Sunny;
+    font-size: 5vmax;
+    overflow: hidden;
+}
+
+.title{
+    color: #5079a7;
+    position: absolute;
+    bottom:0;
+    font-weight: lighter;
+}
+
+.title::before{
+    color: #c5d8e7;
+    opacity: .5;
+    content: "NALGONA?";
+    font-weight: lighter;
+    position: absolute;
+    bottom:0;
+    filter: blur(10px) brightness(2);
+}
+
+.spa{
+    font-style: normal;
+}
+.typeted{
+    position: absolute;
+    filter: blur(50px);
+}
+.one{
+    color:rgb(250, 161, 161);
+}
+.tu {
+    color:rgb(220, 172, 252);
+}
+.tri {
+    color:rgb(252, 244, 173);
+}
+.for {
+    color:rgb(170, 253, 219);
+}
+
+@media all and (orientation:portrait) {
+	body {
+		background: rgb(62, 37, 94);
+	}
+	.landscape {
+		display: none;
+	}
+    .portrait{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        min-height: 100vh;
+        font-family: 'Loved by the King', cursive;
+    }
+}
+@media all and (orientation:landscape) {
+	.portrait {
+		display: none;
+	}
+}
