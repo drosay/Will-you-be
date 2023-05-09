@@ -27,6 +27,11 @@ const click = document.getElementById('click')
 console.log(click)
 
 click.addEventListener("click",()=>{
-        audio.volume = 0.2
+        audio.volume = 1
         audio.muted = false
-})          
+})     
+
+click.addEventListener("touchstart",()=>{
+        audio.volume = 1
+        audio.muted = false
+})     
