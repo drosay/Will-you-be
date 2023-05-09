@@ -32,6 +32,13 @@ click.addEventListener("click",()=>{
 })     
 
 click.addEventListener("touchstart",()=>{
-        audio.volume = 1
         audio.muted = false
+        audio.volume = 1
+        audio.play()
+})     
+
+click.addEventListener("touchend",()=>{
+        audio.muted = false
+        audio.volume = 1
+        audio.play()
 })     
