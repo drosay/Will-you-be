@@ -37,7 +37,7 @@
 .title::before{
     color: #dd99dd;
     opacity: .5;
-    content: "NALGONA?";
+    content: "Plz say yes";
     font-weight: lighter;
     position: absolute;
     bottom:0;
