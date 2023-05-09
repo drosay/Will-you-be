@@ -11,7 +11,6 @@
     box-sizing: border-box;
 }
 
-
 .container{
     display: flex;
     justify-content: center;
@@ -29,20 +28,20 @@
 }
 
 .title{
-    color: #5079a7;
+    color: #dd99dd;
     position: absolute;
     bottom:0;
     font-weight: lighter;
 }
 
 .title::before{
-    color: #c5d8e7;
+    color: #dd99dd;
     opacity: .5;
     content: "NALGONA?";
     font-weight: lighter;
     position: absolute;
     bottom:0;
-    filter: blur(10px) brightness(2);
+    filter: blur(5px) brightness(3);
 }
 
 .spa{

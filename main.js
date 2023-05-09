@@ -1,8 +1,8 @@
 const typed = new Typed('.typed',{
         stringsElement:"#text",
         smartBackspace:true,
-        typeSpeed: 100,
-        backSpeed:100,
+        typeSpeed: 50,
+        backSpeed:50,
         startDelay:1000,
         backDelay:1000,
         loop:true,
@@ -21,3 +21,12 @@ const typed = new Typed('.typed',{
 //     contentType:'html',
 //     showCursor:false
 // })
+
+const audio = document.getElementById('audio')
+const click = document.getElementById('click')
+console.log(click)
+
+click.addEventListener("click",()=>{
+        audio.volume = 0.2
+        audio.muted = false
+})          
